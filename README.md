@@ -1,2 +1,2 @@
-# Reproducciones-al-óleo
+# reproducciones-al-óleo
 Reproducciones de cuadros famosos pintados al óleo
