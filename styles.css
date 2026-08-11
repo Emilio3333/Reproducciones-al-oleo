@@ -223,7 +223,15 @@ nav a:hover::after {
   background: #d5ae72;
   transform: translateY(-4px);
 }
+/* Reducir separación entre categorías y proceso */
 
+#reproducciones {
+  padding-bottom: 60px;
+}
+
+.proceso {
+  padding-top: 60px;
+}
 @media (max-width: 700px) {
   .enlaces-categorias {
     grid-template-columns: 1fr;
