@@ -193,3 +193,39 @@ nav a:hover::after {
 .paso strong {
   display: none;
 }
+/* Enlaces a las categorías */
+
+.enlaces-categorias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.enlace-categoria {
+  display: block;
+  padding: 24px;
+  color: #ffffff;
+  background: #29241d;
+  border: 1px solid #b7894c;
+  border-radius: 4px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  text-align: center;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.enlace-categoria:hover {
+  color: #29241d;
+  background: #d5ae72;
+  transform: translateY(-4px);
+}
+
+@media (max-width: 700px) {
+  .enlaces-categorias {
+    grid-template-columns: 1fr;
+  }
+}
