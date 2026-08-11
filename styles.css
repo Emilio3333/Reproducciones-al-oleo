@@ -479,3 +479,61 @@ footer {
   }
 
 }
+/* Forzar diseño de los dos enlaces */
+
+#reproducciones a[href*="modernos-y-decorativos"],
+#reproducciones a[href*="/abstractos/"] {
+  display: inline-flex !important;
+  width: calc(50% - 14px);
+  min-height: 125px;
+  margin-top: 30px;
+  padding: 26px 30px;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: top;
+  color: #ffffff !important;
+  background: linear-gradient(125deg, #211d18, #5d4227) !important;
+  border: 1px solid #b7894c;
+  border-radius: 4px;
+  font-family: Georgia, "Times New Roman", serif;
+  transition: transform 0.3s ease;
+}
+
+#reproducciones a[href*="modernos-y-decorativos"] {
+  margin-right: 20px;
+}
+
+#reproducciones a[href*="modernos-y-decorativos"]:hover,
+#reproducciones a[href*="/abstractos/"]:hover {
+  transform: translateY(-5px);
+}
+
+#reproducciones a[href*="modernos-y-decorativos"] small,
+#reproducciones a[href*="/abstractos/"] small {
+  display: block;
+  color: #d5ae72;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#reproducciones a[href*="modernos-y-decorativos"] span,
+#reproducciones a[href*="/abstractos/"] span {
+  display: block;
+  color: #ffffff;
+  font-size: 1.65rem;
+}
+
+@media (max-width: 700px) {
+  #reproducciones a[href*="modernos-y-decorativos"],
+  #reproducciones a[href*="/abstractos/"] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #reproducciones a[href*="/abstractos/"] {
+    margin-top: 15px;
+  }
+}
