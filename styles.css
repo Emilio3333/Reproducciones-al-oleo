@@ -187,3 +187,9 @@ nav a:hover::after {
   max-width: 760px;
   margin-bottom: 55px;
   color:
+/* Ocultar números decorativos */
+
+.tarjeta span,
+.paso strong {
+  display: none;
+}
